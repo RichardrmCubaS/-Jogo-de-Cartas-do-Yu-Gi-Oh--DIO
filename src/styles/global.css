@@ -1,0 +1,185 @@
+
+
+body {
+    cursor:url("../assets/cursor/yugicursor.png"), default ;
+}
+
+body {
+    cursor:url("../assets/cursor/yugicursor.png"), default ;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(203, 203, 27);
+}
+
+button,
+a,
+img:hover,
+a:hover {
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+/* Estilo para vídeo de fundo */
+.bg-video {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-video .video {
+    height: 100vh;
+}
+
+.bg-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Estilo para container principal */
+.container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilo para o container esquerdo */
+.container__left {
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilo para o container direito */
+.container__right {
+    width: 65%;
+}
+
+/* Estilo para caixa de pontuação */
+.score_box {
+    background-color: #fff;
+    display: flex;  
+    padding: 30px;
+}
+
+/* Estilo para moldura */
+.frame {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+/* Estilo para detalhes do card */
+.card_details {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+/* Estilo para nome do card */
+#card-name {
+    font-size: 0.8rem;
+}
+
+/* Estilo para tipo do card */
+#card-type {
+    font-size: 1rem;
+}
+
+/* Estilo para container de cartas */
+.card-box__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+/* Estilo para container de cartas no duelo */
+.card-versus__container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: 45px;
+    padding-top: 0.1rem;
+    height: 300px;
+}
+
+/* Estilo para seções superior e inferior do duelo */
+.versus-top,
+.versus-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para seção inferior do duelo */
+.versus-bottom {
+    margin-top: 1rem;
+}
+
+/* Estilo para botão de próximo duelo */
+#next-duel {
+    display: none;
+}
+
+/* Estilo para caixa de cartas */
+.card-box {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Estilo para campo de cartas no duelo */
+.card-infield {
+    height: 11.2rem;
+    width: 8rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.card {
+   transition: transform 0.2s;
+}
+
+.card:hover{
+     transform: scale(1.2);
+}
+
+/* Media Query para dispositivos móveis e tablets */
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container__left,
+    .container__right {
+        width: 100%;
+    }
+
+    .card-box {
+        height: 6rem;
+    }
+}

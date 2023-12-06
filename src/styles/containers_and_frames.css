@@ -1,0 +1,106 @@
+/**
+* Divs (containers) e objetos emoldurados (imagem de fundo e moldura personalizada).
+*/
+
+/* Div do jogo sem imagem de fundo*/
+.rpgui-container {
+  /* Estilo de posição e z-index padrão*/
+  position: fixed;
+  z-index: 10;
+
+  overflow: show;
+}
+
+/* Div do jogo com imagem de fundo*/
+.framed {
+  /* Borda */
+  border-style: solid;
+  border-image-source: url("../assets/rpg/border-image.png");
+  border-image-repeat: repeat;
+  border-image-slice: 6 6 6 6;
+  border-image-width: 18px;
+  border-width: 15px;
+  padding: 12px;
+
+  /* Borda interna */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  /* Fundo */
+  background: url("../assets/rpg/background-image.png") repeat repeat;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center;
+}
+
+/* Div do jogo com imagem de fundo dourada*/
+.framed-golden {
+  /* Borda */
+  border-style: solid;
+  border-image-source: url("../assets/rpg/border-image-golden.png");
+  border-image-repeat: repeat;
+  border-image-slice: 4 4 4 4;
+  border-image-width: 18px;
+  border-width: 15px;
+  padding: 12px;
+
+  /* Borda interna */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  /* Fundo */
+  background: url("../assets/rpg/background-image-golden.png") repeat repeat;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center;
+}
+
+/* Div do jogo com imagem de fundo dourada2*/
+.framed-golden-2 {
+  /* Borda */
+  border-style: solid;
+  border-image-source: url("../assets/rpg/border-image-golden2.png");
+  border-image-repeat: repeat;
+  border-image-slice: 8 8 8 8;
+  border-image-width: 18px;
+  border-width: 15px;
+  padding: 12px;
+
+  /* Borda interna */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  /* Fundo */
+  background: url("../assets/rpg/background-image-golden2.png") repeat repeat;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center;
+}
+
+/* Div do jogo com imagem de fundo cinza suave */
+.framed-grey {
+  position: relative;
+
+  /* Borda */
+  border-style: solid;
+  border-image-source: url("../assets/rpg/border-image-grey.png");
+  border-image-repeat: repeat;
+  border-image-slice: 3 3 3 3;
+  border-image-width: 7px;
+  border-width: 7px;
+  padding: 12px;
+
+  /* Borda interna */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  /* Fundo */
+  background: url("../assets/rpg/background-image-grey.png") repeat repeat;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center;
+}
